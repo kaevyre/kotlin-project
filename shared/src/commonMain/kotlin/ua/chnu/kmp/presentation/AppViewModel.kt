@@ -20,10 +20,6 @@ import ua.chnu.kmp.domain.posts.usecase.GetPostsUseCase
 import ua.chnu.kmp.domain.posts.usecase.UpdatePostUseCase
 import kotlin.time.Duration.Companion.milliseconds
 
-/**
- * MVI: the UI sends [AppAction]s via [onAction], the view model exposes the screen
- * [AppState] and one-off [AppEvent]s (e.g. error snackbars).
- */
 @Stable
 class AppViewModel internal constructor(
     private val getPostsUseCase: GetPostsUseCase,
